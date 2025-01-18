@@ -7,7 +7,7 @@
     <title>[Your Name]'s Grad School Applications</title>
     <style>
         body {
-            background-color: #3b003b; /* Dark purple */
+            background-color: #2c0046;
             color: white;
             font-family: "Times New Roman", Times, serif;
             margin: 0;
@@ -16,7 +16,11 @@
 
         h1 {
             text-align: center;
-            color: #f8f8ff; /* Light grayish white */
+            color: #f8f8ff;
+        }
+
+        .hidden {
+            display: none;
         }
 
         table {
@@ -32,9 +36,122 @@
         }
 
         th {
-            background-color: #4b004b; /* Slightly lighter purple */
+            background-color: #4b004b;
             color: white;
         }
 
         tr:nth-child(even) {
-            background-color: #4a2b4a; /* Mid-tone
+            background-color: #4a2b4a;
+        }
+
+        tr:hover {
+            background-color: #5a3b5a;
+        }
+
+        .status-submitted {
+            background-color: #88c0d0;
+            color: black;
+        }
+
+        .status-interviewed {
+            background-color: #a3be8c;
+            color: black;
+        }
+
+        .status-rejected {
+            background-color: #bf616a;
+            color: black;
+        }
+
+        .status-admitted {
+            background-color: #ebcb8b;
+            color: black;
+        }
+
+        button {
+            margin: 10px 0;
+            padding: 10px 15px;
+            font-size: 1rem;
+            background-color: #5a3b5a;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #774a77;
+        }
+    </style>
+    <script>
+        function toggleLanguage(lang) {
+            document.querySelectorAll(".lang-en").forEach(el => el.style.display = lang === "en" ? "" : "none");
+            document.querySelectorAll(".lang-es").forEach(el => el.style.display = lang === "es" ? "" : "none");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>[Your Name]'s Grad School Applications</h1>
+    <button onclick="toggleLanguage('en')">English</button>
+    <button onclick="toggleLanguage('es')">Español</button>
+
+    <div class="lang-en">
+        <table>
+            <thead>
+                <tr>
+                    <th>Program</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Example University</td>
+                    <td class="status-submitted">Submitted</td>
+                </tr>
+                <tr>
+                    <td>Another University</td>
+                    <td class="status-interviewed">Interviewed</td>
+                </tr>
+                <tr>
+                    <td>Sample College</td>
+                    <td class="status-admitted">Admitted</td>
+                </tr>
+                <tr>
+                    <td>Placeholder Institute</td>
+                    <td class="status-rejected">Rejected</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="lang-es hidden">
+        <table>
+            <thead>
+                <tr>
+                    <th>Programa</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Universidad Ejemplo</td>
+                    <td class="status-submitted">Enviado</td>
+                </tr>
+                <tr>
+                    <td>Otra Universidad</td>
+                    <td class="status-interviewed">Entrevistado</td>
+                </tr>
+                <tr>
+                    <td>Colegio de Ejemplo</td>
+                    <td class="status-admitted">Admitido</td>
+                </tr>
+                <tr>
+                    <td>Instituto Placeholder</td>
+                    <td class="status-rejected">Rechazado</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
