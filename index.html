@@ -89,10 +89,20 @@
         }
     </style>
     <script>
+        // function toggleLanguage(lang) {
+        //     document.querySelectorAll(".lang-en").forEach(el => el.style.display = lang === "en" ? "" : "none");
+        //     document.querySelectorAll(".lang-es").forEach(el => el.style.display = lang === "es" ? "" : "none");
+        // }
         function toggleLanguage(lang) {
-            document.querySelectorAll(".lang-en").forEach(el => el.style.display = lang === "en" ? "" : "none");
-            document.querySelectorAll(".lang-es").forEach(el => el.style.display = lang === "es" ? "" : "none");
-        }
+            document.querySelectorAll(".lang-en, .lang-es").forEach(el => el.style.display = "none");
+
+            // Show the selected language section
+            if (lang === "en") {
+                document.querySelectorAll(".lang-en").forEach(el => el.style.display = "");
+            } else if (lang === "es") {
+                document.querySelectorAll(".lang-es").forEach(el => el.style.display = "");
+            }
+            
     </script>
 </head>
 
