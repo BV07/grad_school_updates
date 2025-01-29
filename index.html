@@ -59,11 +59,21 @@
             color: black;
         }
 
+        .status-pending {
+            background-color: #ebcb8b;
+            color: black;
+        }
+        
         .status-interviewed {
             background-color: #88c0d0;
             color: black;
         }
 
+        .status-waitlisted {
+            background-color: #a3e4d7; 
+            color: black;
+        }
+        
         .status-rejected {
             background-color: #bf616a;
             color: black;
@@ -74,10 +84,6 @@
             color: black;
         }
 
-        .status-pending {
-            background-color: #ebcb8b;
-            color: black;
-        }
 
         button {
             margin: 10px 0;
@@ -93,29 +99,11 @@
             background-color: #774a77;
         }
     </style>
-<!--     <script>
-        // function toggleLanguage(lang) {
-        //     document.querySelectorAll(".lang-en").forEach(el => el.style.display = lang === "en" ? "" : "none");
-        //     document.querySelectorAll(".lang-es").forEach(el => el.style.display = lang === "es" ? "" : "none");
-        // }
-        function toggleLanguage(lang) {
-            document.querySelectorAll(".lang-en, .lang-es").forEach(el => el.style.display = "none");
-
-            // Show the selected language section
-            if (lang === "en") {
-                document.querySelectorAll(".lang-en").forEach(el => el.style.display = "");
-            } else if (lang === "es") {
-                document.querySelectorAll(".lang-es").forEach(el => el.style.display = "");
-            }
-            
-    </script> -->
 </head>
 
 <body>
     <h1>Brandon's Grad School Applications (PhD)</h1>
     <h2>Aplicaciones de Posgrado (PhD)</h2>
-<!--     <button onclick="toggleLanguage('en')">English</button>
-    <button onclick="toggleLanguage('es')">Español</button> -->
 
     <div class="lang-en">
         <table>
@@ -139,9 +127,9 @@
                 </tr>
                 <tr>
                     <td>Dartmouth (Physics & Astronomy)</td>
-                    <td class="status-interviewed">Interviewed/Entrevistado</td>
-                    <td> The interview went well. Expecting to hear back in early Feb <br><br>
-                    La entrevista salió bien. Espero escuchar noticias temprano en Feb</td>
+                    <td class="status-waitlisted">Interviewed/Entrevistado</td>
+                    <td> Interview went well. Updated Jan 29th. <br><br>
+                    La entrevista salió bien. Actualizado en Ene 29. </td>
                 </tr>
                 <tr>
                     <td>Harvard (Physics/Astronomy)</td>
@@ -156,8 +144,8 @@
                 <tr>
                     <td>MIT (Physics)</td>
                     <td class="status-interviewed">Interviewed/Entrevistado</td>
-                    <td>The interview went well. Expecting to hear back in mid Feb <br><br>
-                    La entrevista salió bien. Espero escuchar noticias a mediados de Feb</td>
+                    <td>The interview went well. Expecting to hear back in mid Feb. <br><br>
+                    La entrevista salió bien. Espero escuchar noticias a mediados de Feb. </td>
                 </tr>
                 <tr>
                     <td>Princeton (Astrophysics)</td>
@@ -174,12 +162,7 @@
                     <td class="status-submitted">Submitted/Enviado</td>
                     <td></td>
                 </tr>
-<!--                 <tr>
-                    <td>example</td>
-                    <td class="status-interviewed">Interviewed</td>
-                </tr>
-                <tr>
-                    <td>Sample College</td>
+<!--                <td>Sample College</td>
                     <td class="status-admitted">Admitted</td>
                 </tr>
                 <tr>
@@ -190,70 +173,6 @@
         </table>
     </div>
 
-<!--     <div class="lang-es hidden">
-        <table>
-            <thead>
-                <tr>
-                    <th>Programa</th>
-                    <th>Estado</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Boston University</td>
-                    <td class="status-submitted">Enviado</td>
-                </tr>
-                <tr>
-                    <td>Cambridge</td>
-                    <td class="status-submitted">Enviado</td>
-                </tr>
-                <tr>
-                    <td>Dartmouth</td>
-                    <td class="status-pending">Entrevista Pendiente</td>
-                </tr>
-                <tr>
-                    <td>Harvard</td>
-                    <td class="status-submitted">Enviado</td>
-                </tr>
-                <tr>
-                    <td>McGill</td>
-                    <td class="status-submitted">Enviado</td>
-                </tr>
-                <tr>
-                    <td>MIT</td>
-                    <td class="status-pending">Entrevista Pendiente</td>
-                </tr>
-                <tr>
-                    <td>Princeton</td>
-                    <td class="status-submitted">Enviado</td>
-                </tr>
-                <tr>
-                    <td>UMass Amherst</td>
-                    <td class="status-submitted">Enviado</td>
-                </tr>
-                <tr>
-                    <td>Yale</td>
-                    <td class="status-submitted">Enviado</td>
-                </tr>
-<!--                 <tr>
-                    <td>Universidad Ejemplo</td>
-                    <td class="status-submitted">Enviado</td>
-                </tr>
-                <tr>
-                    <td>Otra Universidad</td>
-                    <td class="status-interviewed">Entrevistado</td>
-                </tr>
-                <tr>
-                    <td>Colegio de Ejemplo</td>
-                    <td class="status-pending">Entrevista Pendiente</td>
-                </tr>
-                <tr>
-                    <td>Instituto Placeholder</td>
-                    <td class="status-rejected">Rechazado</td>
-                </tr> -->
-<!--             </tbody>
-        </table>
-    </div> --> 
 </body>
 
 </html>
